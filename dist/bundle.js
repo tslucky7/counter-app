@@ -62,6 +62,29 @@ var __webpack_exports__ = {};
 __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _css_style_css__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../css/style.css */ "./src/css/style.css");
 
+const decrement = document.getElementById("decrement");
+const increment = document.getElementById("increment");
+const countDisplay = document.getElementById("counter");
+let intCountDisplay = parseInt((countDisplay === null || countDisplay === void 0 ? void 0 : countDisplay.textContent) || "0");
+const reset = document.getElementById("reset");
+console.log(intCountDisplay);
+console.log(decrement);
+console.log(increment);
+console.log(reset);
+document.addEventListener("DOMContentLoaded", () => {
+    increment === null || increment === void 0 ? void 0 : increment.addEventListener("click", () => {
+        intCountDisplay++;
+        countDisplay.textContent = intCountDisplay.toString();
+    });
+    decrement === null || decrement === void 0 ? void 0 : decrement.addEventListener("click", () => {
+        intCountDisplay--;
+        countDisplay.textContent = intCountDisplay.toString();
+    });
+    reset === null || reset === void 0 ? void 0 : reset.addEventListener("click", () => {
+        intCountDisplay = 0;
+        countDisplay.textContent = intCountDisplay.toString();
+    });
+});
 
 })();
 

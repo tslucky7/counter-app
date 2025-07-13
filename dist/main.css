@@ -67,5 +67,38 @@ button:hover {
   opacity: 0.85;
 }
 
+/* 入力時のログ */
+.log-area {
+  margin-top: 2rem;
+  text-align: left;
+  max-width: 300px;
+  margin-inline: auto;
+}
+
+.log-area h2 {
+  font-size: 1.1rem;
+  margin-bottom: 0.5rem;
+}
+
+#log-list {
+  list-style: none;
+  padding: 0;
+  font-size: 0.9rem;
+  max-height: 150px;
+  overflow-y: auto;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  padding: 0.5rem;
+  background-color: #f9f9f9;
+}
+
+/* ステップ */
+.step-control {
+  margin-bottom: 1rem;
+}
+.step-control label {
+  margin-right: 0.5rem;
+}
+
 
 /*# sourceMappingURL=main.css.map*/

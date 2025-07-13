@@ -5,6 +5,7 @@ const increment = document.getElementById("increment");
 const countDisplay = document.getElementById("counter");
 let intCountDisplay = parseInt(countDisplay?.textContent || "0");
 const reset = document.getElementById("reset");
+const stepInput = document.getElementById("step") as HTMLInputElement | null;
 
 console.log(intCountDisplay);
 console.log(decrement);
@@ -22,4 +23,8 @@ document.addEventListener("DOMContentLoaded", () => {
     intCountDisplay--;
     countDisplay!.textContent = intCountDisplay.toString();
   });
+  reset?.addEventListener("click", () => {
+    intCountDisplay = 0;
+    countDisplay!.textContent = intCountDisplay.toString();
+  })
 });
