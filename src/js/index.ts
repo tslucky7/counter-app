@@ -7,9 +7,6 @@ let intCountDisplay = parseInt(countDisplay?.textContent || "0");
 const reset = document.getElementById("reset");
 const stepInput = document.getElementById("step") as HTMLInputElement | null;
 
-console.dir(decrement);
-console.dir(stepInput);
-
 // ステップ数に応じて入力ボタンのテキストを変更
 if (decrement) {
   decrement.textContent = "-" + stepInput?.value.toString();
