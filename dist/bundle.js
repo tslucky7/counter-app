@@ -67,10 +67,8 @@ const increment = document.getElementById("increment");
 const countDisplay = document.getElementById("counter");
 let intCountDisplay = parseInt((countDisplay === null || countDisplay === void 0 ? void 0 : countDisplay.textContent) || "0");
 const reset = document.getElementById("reset");
-console.log(intCountDisplay);
-console.log(decrement);
-console.log(increment);
-console.log(reset);
+const stepInput = document.getElementById("step");
+console.log(stepInput === null || stepInput === void 0 ? void 0 : stepInput.value);
 document.addEventListener("DOMContentLoaded", () => {
     increment === null || increment === void 0 ? void 0 : increment.addEventListener("click", () => {
         intCountDisplay++;
